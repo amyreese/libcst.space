@@ -9,15 +9,15 @@ install:
 venv: .venv
 
 test:
-	python -m unittest -v PACKAGE_NAME
-	python -m mypy -p PACKAGE_NAME
+	python -m unittest -v libcstdotspace
+	python -m mypy -p libcstdotspace
 
 lint:
-	python -m flake8 PACKAGE_NAME
-	python -m ufmt check PACKAGE_NAME
+	python -m flake8 libcstdotspace
+	python -m ufmt check libcstdotspace
 
 format:
-	python -m ufmt format PACKAGE_NAME
+	python -m ufmt format libcstdotspace
 
 release: lint test clean
 	flit publish
@@ -27,6 +27,3 @@ clean:
 
 distclean: clean
 	rm -rf .venv
-
-init:
-	@python init.py

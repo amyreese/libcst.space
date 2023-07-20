@@ -1,18 +1,18 @@
-# PROJECT_NAME
+# libcst.space
 
-PROJECT_DESCRIPTION
+Interactive playground for LibCST
 
-[![version](https://img.shields.io/pypi/v/PACKAGE_NAME.svg)](https://pypi.org/project/PACKAGE_NAME)
-[![license](https://img.shields.io/pypi/l/PACKAGE_NAME.svg)](https://github.com/GITHUB_USERNAME/PACKAGE_NAME/blob/main/LICENSE)
+[![version](https://img.shields.io/pypi/v/libcstdotspace.svg)](https://pypi.org/project/libcstdotspace)
+[![license](https://img.shields.io/pypi/l/libcstdotspace.svg)](https://github.com/amyreese/libcstdotspace/blob/main/LICENSE)
 
 Install
 -------
 
 ```shell-session
-$ pip install PACKAGE_NAME
+$ pip install libcstdotspace
 ```
 
 License
 -------
 
-PROJECT_NAME is copyright AUTHOR_NAME, and licensed under the MIT license.
+libcst.space is copyright Amethyst Reese, and licensed under the MIT license.

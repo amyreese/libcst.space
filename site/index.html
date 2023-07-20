@@ -11,7 +11,7 @@
     />
     <style>
       .terminal {
-        --size: 1.5;
+        /* --size: 1.5; */
         --color: rgba(255, 255, 255, 0.8);
       }
       .noblink {
@@ -19,6 +19,17 @@
       }
       body {
         background-color: black;
+      }
+      h1 {
+        font-size: 24px;
+        color: white;
+      }
+      p {
+        color: white;
+      }
+      pre {
+        color: white;
+        margin-left: 2em;
       }
       #jquery-terminal-logo {
         color: white;
@@ -61,6 +72,20 @@
 <script defer data-domain="pyodide.org" src="https://plausible.io/js/plausible.js"></script>
   </head>
   <body>
+    <h1>🪐 libcst.space 🌒</h1>
+
+    <p>Try the following:</p>
+    <pre>
+import micropip
+await micropip.install(
+  "https://cdn.n7.gg/libcst-1.0.1-cp311-cp311-emscripten_3_1_32_wasm32.whl"
+)
+import libcst
+
+code = "lambda x: print(x) + 37"
+exp = libcst.parse_expression(code)
+print(exp)
+    </pre>
     <div id="jquery-terminal-logo">
       <a href="https://terminal.jcubic.pl/">jQuery Terminal</a>
     </div>
@@ -108,19 +133,7 @@
             from pyodide.console import PyodideConsole, repr_shorten, BANNER
             import __main__
             from textwrap import dedent
-            BANNER = dedent(
-                """
-                🪐 libcst.space 🌒
-
-                Try the following:
-
-                    import micropip
-                    await micropip.install(
-                        "https://cdn.n7.gg/libcst-1.0.1-cp311-cp311-emscripten_3_1_32_wasm32.whl"
-                    )
-                    import libcst
-                """
-            )
+            BANNER = ""
             pyconsole = PyodideConsole(__main__.__dict__)
             import builtins
             async def await_fut(fut):

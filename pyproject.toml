@@ -21,7 +21,7 @@ dev = [
     "flit==3.8.0",
     "mypy==1.2.0",
     "ufmt==2.0.1",
-    "usort==1.0.6",
+    "usort==1.0.7",
 ]
 
 [project.scripts]
